@@ -70,11 +70,12 @@ export default function SuccessModal({ isOpen, onRestart, time, score }: Success
                     onClick={() => setSelectedAuthor(author.id)}
                     className="cursor-pointer group"
                   >
-                    <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-slate-100 mb-2 group-hover:border-blue-400 transition-colors">
+                    <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-slate-100 mb-2 group-hover:border-blue-400 transition-colors bg-slate-50">
                       <Image
                         src={author.image}
                         alt={author.author}
                         fill
+                        priority
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
